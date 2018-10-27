@@ -5,9 +5,7 @@
   "main": "index.html",
   "author": "",
   "license": "ISC",
-  "dependencies": {
-
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/preset-env": "^7.1.0",
@@ -28,8 +26,6 @@
     "webpack-merge": "^4.1.4"
   },
   "scripts": {
-    "build": "npm run dist && webpack --config ./webpack/webpack.dev.js",
-    "dist": "rimraf dist && webpack --config ./webpack/webpack.dist.js && npm run distCss",
     "start": "webpack-dev-server --config ./webpack/webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   }
