@@ -7,18 +7,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="./index.css">
     <meta charset="utf-8">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="./dev/main.js"></script>
-    <script type="text/javascript" src="./index.js"></script>
+
 </head>
 <body>
 <h4>FIRST EXAMPLE</h4>
 <br>
 <div>
-    <button type="button" data-name="first" class="btn btn-default btn-sm">First button</button>
-    <button type="button" data-name="second" class="btn btn-default btn-sm">Second button</button>
-    <button type="button" data-name="third" class="btn btn-default btn-sm">Third button</button>
+    <button type="button" data-name="first" href="#menu1" class="btn btn-default btn-sm">First button</button>
+    <button type="button" data-name="second" href="#menu2" class="btn btn-default btn-sm">Second button</button>
+    <button type="button" data-name="third" href="#menu3" class="btn btn-default btn-sm">Third button</button>
 </div>
 <br>
 <div class="container">
@@ -29,19 +26,25 @@
         <li data-third><a data-toggle="tab" href="#menu3">Third tab</a></li>
     </ul>
     <div class="tab-content">
-        <div id="menu1" class="tab-pane fade in active">
+        <div id="menu1" data-first class="tab-pane fade in active">
             <h3>Menu 1</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
-        <div id="menu2" class="tab-pane fade">
+        <div id="menu2" data-second class="tab-pane fade">
             <h3>Menu 2</h3>
             <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
-        <div id="menu3" class="tab-pane fade">
+        <div id="menu3" data-third class="tab-pane fade">
             <h3>Menu 3</h3>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
         </div>
     </div>
 </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./dev/main.js"></script>
+<!--<script type="text/javascript">-->
+    <!--window.onload = openTab()-->
+<!--</script>-->
 </body>
 </html>
