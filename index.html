@@ -13,17 +13,17 @@
 <h4>FIRST EXAMPLE</h4>
 <br>
 <div>
-    <button type="button" data-name="first" href="#menu1" class="btn btn-default btn-sm">First button</button>
-    <button type="button" data-name="second" href="#menu2" class="btn btn-default btn-sm">Second button</button>
-    <button type="button" data-name="third" href="#menu3" class="btn btn-default btn-sm">Third button</button>
+    <button data-name="first"  type="button" href="#menu1" class="btn btn-default btn-sm">First button</button>
+    <button data-name="second" type="button" href="#menu2" class="btn btn-default btn-sm">Second button</button>
+    <button data-name="third"  type="button" href="#menu3" class="btn btn-default btn-sm">Third button</button>
 </div>
 <br>
 <div class="container">
     <h3>Tabs</h3>
     <ul class="nav nav-tabs">
-        <li data-first class="first"><a data-toggle="tab" href="#menu1">First tab</a></li>
-        <li data-second><a data-toggle="tab" href="#menu2">Second tab</a></li>
-        <li data-third><a data-toggle="tab" href="#menu3">Third tab</a></li>
+        <li><a class="first" data-toggle="tab" href="#menu1">First tab</a></li>
+        <li><a class="second" data-toggle="tab" href="#menu2">Second tab</a></li>
+        <li><a class="third" data-toggle="tab" href="#menu3">Third tab</a></li>
     </ul>
     <div class="tab-content">
         <div id="menu1" data-first class="tab-pane fade in active">
@@ -43,8 +43,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./dev/main.js"></script>
-<!--<script type="text/javascript">-->
-    <!--window.onload = openTab()-->
-<!--</script>-->
 </body>
 </html>
