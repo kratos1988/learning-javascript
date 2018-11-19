@@ -46,22 +46,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="./dev/main.js"></script>
-<script type="text/javascript">
-    window.addEventListener("load", onLoadFunction());
-
-    function onLoadFunction() {
-        console.log("I'm inside onLoadFunction()!!!")
-        let items = document.querySelectorAll('[data-name]');
-        for (let item of items) {
-
-            item.addEventListener('click', () => {
-                console.log("I'm inside anonymous function!!!")
-                var targetElem = document.querySelector('.' + item.dataset.name);
-                targetElem.click();
-            })
-        }
-    }
-
-</script>
 </body>
 </html>
